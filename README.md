@@ -1,4 +1,3 @@
-
 # Téléchargeur Multimédia - Par Symeon
 
 Ce projet vous permet de télécharger des vidéos et des musiques depuis plusieurs plateformes comme YouTube et SoundCloud. Il propose également des options pour télécharger uniquement l'audio ou la vidéo, ou bien les deux et les fusionner automatiquement. Ce script utilise `yt-dlp` pour gérer les téléchargements.
@@ -13,16 +12,46 @@ Ce projet vous permet de télécharger des vidéos et des musiques depuis plusie
 ## Prérequis
 
 - Python 3.x
-- `yt-dlp` : un outil en ligne de commande pour télécharger des vidéos et de l'audio depuis des sites comme YouTube et SoundCloud.
+- `yt-dlp` : outil en ligne de commande pour télécharger des vidéos/audio.
+- `ffmpeg` : utilisé pour fusionner l’audio et la vidéo.
 
 ## Installation
 
-1. Clonez ce projet ou téléchargez le fichier ZIP.
-2. Lancez le script en utilisant Python.
+1. Clonez ce projet ou téléchargez le fichier ZIP :
 
 ```bash
 git clone https://github.com/Symeon-createur/YouTube-SoundCloud-Downloader
-cd mon-projet
+cd YouTube-SoundCloud-Downloader
+```
+
+2. Installez les dépendances Python :
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Installez `ffmpeg` :
+
+- **Windows** :
+  - Téléchargez la version statique ici : [https://www.gyan.dev/ffmpeg/builds/](https://www.gyan.dev/ffmpeg/builds/)
+  - Extrayez l'archive.
+  - Ajoutez le chemin du dossier `bin` à la variable d’environnement `PATH`.
+
+- **Linux** :
+
+```bash
+sudo apt update && sudo apt install ffmpeg
+```
+
+- **macOS** (avec Homebrew) :
+
+```bash
+brew install ffmpeg
+```
+
+4. Lancez le script :
+
+```bash
 python install_and_run.py
 ```
 
