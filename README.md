@@ -35,6 +35,6 @@ python install_and_run.py
 ## Aide
 
 - Si vous rencontrez des problèmes, n'hésitez pas à consulter la [documentation de yt-dlp](https://github.com/yt-dlp/yt-dlp) pour plus d'informations.
-- Pour toute autre question, vous pouvez ouvrir un problème sur [GitHub](https://github.com/Symeon-createur/mon-projet/issues).
+- Pour toute autre question, vous pouvez ouvrir un problème sur [GitHub](https://github.com/Symeon-createur/YouTube-SoundCloud-Downloader/issues).
 
 ### Par Symeon
