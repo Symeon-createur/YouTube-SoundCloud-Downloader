@@ -28,8 +28,8 @@ def extract_formats(output):
         parts = line.strip().split()
         if len(parts) >= 2 and parts[0].isdigit():
             format_id = parts[0]
-            resolution = [s for s in parts if 'p' in s]  # Récupère la résolution
-            if resolution and int(resolution[0].replace('p', '')) >= 720:  # Filtrer pour 720p et plus
+            resolution = [s for s in parts if 'p' in s]
+            if resolution and int(resolution[0].replace('p', '')) >= 720:
                 formats[format_id] = ' '.join(parts[1:])
     return formats
 
