@@ -6,7 +6,7 @@ import requests
 from mutagen.mp3 import MP3
 from mutagen.id3 import ID3, TIT2, TPE1, APIC
 import time
-import webbrowser  # Pour ouvrir le lien GitHub
+import webbrowser
 
 def check_yt_dlp():
     try:
@@ -112,9 +112,8 @@ def add_metadata_to_mp3(folder):
             print(f"✅ Métadonnées ajoutées à {title}\n")
 
 def display_project_name():
-    os.system('cls' if os.name == 'nt' else 'clear')  # Nettoie l'écran (Windows ou Linux)
+    os.system('cls' if os.name == 'nt' else 'clear')
     
-    # Message d'accueil centré
     project_name = """
 ====================================================
        YouTube & SoundCloud Downloader
@@ -123,15 +122,13 @@ def display_project_name():
 ====================================================
     """
 
-    # Centrage du texte
-    width = 80  # Largeur du terminal
+    width = 80
     lines = project_name.split("\n")
     centered_lines = [line.center(width) for line in lines]
     print("\n".join(centered_lines))
 
     time.sleep(1)
     
-    # Animation d'apparition
     time.sleep(1)
 
 def open_github():
@@ -145,13 +142,13 @@ if __name__ == "__main__":
 
     time.sleep(2)
 
-    os.system('cls' if os.name == 'nt' else 'clear')  # Nettoie l'écran après affichage du projet
+    os.system('cls' if os.name == 'nt' else 'clear')
 
     print("=== Sélection de la source ===")
     print("1. 📺 Télécharger depuis YouTube")
     print("2. 🎧 Télécharger une playlist SoundCloud")
     print("3. 🔗 Visiter mon GitHub")
-    print("\nby Symeon")  # Signature ajoutée à la fin du menu
+    print("\nby Symeon")
     choix = input("Entrez votre choix (1, 2 ou 3) : ").strip()
 
     if choix == "1":
