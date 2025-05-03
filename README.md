@@ -22,10 +22,9 @@ Ce projet vous permet de télécharger des vidéos et des musiques depuis plusie
 3. Lancez le script en utilisant Python.
 
 ```bash
-git clone https://github.com/Symeon-createur/mon-projet.git
+git clone https://github.com/Symeon-createur/YouTube-SoundCloud-Downloader
 cd mon-projet
-pip install -r requirements.txt
-python mon_script.py
+python install_and_run.py
 ```
 
 ## Commandes principales
