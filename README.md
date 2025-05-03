@@ -18,8 +18,7 @@ Ce projet vous permet de télécharger des vidéos et des musiques depuis plusie
 ## Installation
 
 1. Clonez ce projet ou téléchargez le fichier ZIP.
-2. Installez les dépendances nécessaires avec le fichier `requirements.txt`.
-3. Lancez le script en utilisant Python.
+2. Lancez le script en utilisant Python.
 
 ```bash
 git clone https://github.com/Symeon-createur/YouTube-SoundCloud-Downloader
